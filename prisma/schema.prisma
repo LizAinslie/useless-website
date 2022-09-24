@@ -10,6 +10,7 @@ datasource db {
     url      = env("DATABASE_URL")
 }
 
-// model Example {
-//     id String @id @default(cuid())
-// }
+model ClickCounter {
+    id Int @id @default(autoincrement())
+    clicks Int @default(0)
+}
