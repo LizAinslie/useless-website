@@ -45,6 +45,6 @@
     "initVersion": "6.0.0-next.2dd37e1"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
+    "seed": "ts-node --compiler-options={\"module\":\"commonjs\"} prisma/seed.ts"
   }  
 }
